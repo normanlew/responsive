@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <picture>
+        <source media="(width < 800px)" srcset="images/ocean_web_480.jpg" />
+        <source media="(width >= 800px)" srcset="images/ocean_web_1920.jpg" />
+        <img src="images/ocean_web_1920.jpg" alt="Small boat in the ocean" />
+    </picture> -->
+
+    <img
+        srcset="images/ocean_web_480_same.jpg 480w, images/ocean_web_650.jpg 650w,
+            images/ocean_web_800.jpg 800w, images/ocean_web_1920.jpg 1920w"
+        sizes="(width <= 650px) 480px, (width <= 800px) 650px,
+            (width <= 1200px) 800px, 1920px"
+        src="images/ocean_web_1920.jpg",
+        alt="Boat in the ocean"
+    />
+</body>
+</html>
